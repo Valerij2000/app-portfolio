@@ -55,9 +55,9 @@
   font-family: 'Cinzel', serif;
 }
 
-
 $color-dark : #080808;
-$color-main : #94ffc4;
+$color-main : #ececec;
+$color-white : #fff;
 
 * {
   outline: none !important;
@@ -68,6 +68,7 @@ body {
   padding: 0;
   font-family: 'DM Sans', sans-serif;
   font-size: 17px;
+  min-width: 360px;
 }
 
 
@@ -95,7 +96,12 @@ html.has-scroll-dragging {
   min-height: 100vh;
 }
 
+// Fancybox
 
+.fancybox-content {
+  min-width: 100%;
+  min-height: 100%;
+}
 
 /* HTML ELEMENTS */
 img {
@@ -105,8 +111,6 @@ img {
 iframe {
   max-width: 100%;
 }
-
-
 
 
 /* LINKS */
@@ -838,7 +842,7 @@ button[type="submit"] {
 
             &:hover {
               text-decoration: none;
-              color: $color-main;
+              color: $color-dark;
             }
           }
         }
@@ -846,8 +850,6 @@ button[type="submit"] {
     }
   }
 }
-
-
 
 
 /* NAVBAR */
@@ -931,7 +933,7 @@ button[type="submit"] {
             position: absolute;
             left: 0;
             bottom: -4px;
-            height: 4px;
+            height: 2px;
             width: 0;
             transition: width 0s ease, background .25s ease;
           }
@@ -942,9 +944,9 @@ button[type="submit"] {
             position: absolute;
             right: 0;
             bottom: -4px;
-            height: 4px;
+            height: 2px;
             width: 0;
-            background: $color-main;
+            background: $color-dark;
             transition: width .25s ease;
           }
 
@@ -993,7 +995,7 @@ button[type="submit"] {
             position: absolute;
             left: 0;
             bottom: -4px;
-            height: 4px;
+            height: 2px;
             width: 0;
             transition: width 0s ease, background .25s ease;
           }
@@ -1004,15 +1006,15 @@ button[type="submit"] {
             position: absolute;
             right: 0;
             bottom: -4px;
-            height: 4px;
+            height: 2px;
             width: 0;
-            background: $color-main;
+            background: $color-dark;
             transition: width .25s ease;
           }
 
           &:hover:before {
             width: 50%;
-            background: $color-main;
+            background: $color-dark;
             transition: width .25s ease;
           }
 
@@ -1058,6 +1060,7 @@ button[type="submit"] {
       font-size: 14px;
       font-weight: 700;
       @include transition;
+      border-radius: 5px;
 
       &:hover {
         text-decoration: none;
@@ -1155,6 +1158,8 @@ button[type="submit"] {
     .swiper-slide {
       background-size: cover !important;
 
+      background-position: 0 !important;
+
       .mobile-slide {
         width: 100%;
         height: 100%;
@@ -1198,7 +1203,7 @@ button[type="submit"] {
 
       h1 {
         font-size: 126px;
-        font-weight: 400;
+        font-weight: 700;
         @include font-second;
         line-height: 1;
         margin-bottom: 30px;
@@ -1217,7 +1222,6 @@ button[type="submit"] {
 
   .swiper-fraction {
     width: 200px;
-    color: #fff;
 
     span {
       width: 22px;
@@ -1270,7 +1274,8 @@ button[type="submit"] {
       z-index: 3;
       cursor: pointer;
       transform: translateY(-22px);
-      border-radius: 50%;
+      border-radius: 10%;
+      box-shadow: 3px 2px 4px 0 #aaa;
       @include transition;
 
       &:hover {
@@ -1292,7 +1297,8 @@ button[type="submit"] {
       z-index: 3;
       cursor: pointer;
       transform: translateY(-22px);
-      border-radius: 50%;
+      border-radius: 10%;
+      box-shadow: 3px 2px 4px 0 #aaa;
       @include transition;
 
       &:hover {
@@ -1528,16 +1534,13 @@ button[type="submit"] {
     @include font-second;
     letter-spacing: -2px;
     line-height: 1;
+    font-weight: 600;
 
     strong {
       font-weight: 600;
     }
   }
 }
-
-
-
-
 
 /* CUSTOM LINK */
 .custom-link {
@@ -1567,13 +1570,13 @@ button[type="submit"] {
     bottom: -4px;
     height: 4px;
     width: 0;
-    background: $color-main;
+    background: $color-dark;
     transition: width .25s ease;
   }
 
   &:hover:before {
     width: 50%;
-    background: $color-main;
+    background: $color-dark;
     transition: width .25s ease;
   }
 
@@ -1719,7 +1722,7 @@ button[type="submit"] {
     li {
       width: 100%;
       display: block;
-      margin-bottom: 50px;
+      margin-bottom: 15px;
       padding: 0;
       list-style: none;
 
@@ -3566,10 +3569,6 @@ only screen and (max-device-width: 1199px) {
     font-size: 72px;
   }
 
-  .side-icon-list ul li {
-    margin-bottom: 30px;
-  }
-
   .side-icon-list.right-side {
     padding-left: 30px;
   }
@@ -3723,10 +3722,6 @@ only screen and (max-device-width: 991px) {
     display: block;
   }
 
-  .play-now {
-    display: none;
-  }
-
   .section-title h2 {
     font-size: 48px;
   }
@@ -3766,10 +3761,6 @@ only screen and (max-device-width: 991px) {
 
   .col-lg-3 .circle-button {
     display: none;
-  }
-
-  .col-lg-5 .side-icon-list.right-side {
-    margin-top: 60px;
   }
 
   .cta-box h2 {
@@ -3880,7 +3871,7 @@ only screen and (max-device-width: 767px) {
   }
 
   .content-section {
-    padding: 80px 0;
+    padding: 20px 0;
   }
 
   .side-widget {
@@ -3919,6 +3910,7 @@ only screen and (max-device-width: 767px) {
   }
 
   .slider .slider-texts .swiper-slide h1 {
+    color: $color-dark;
     font-size: 42px;
   }
 
@@ -3973,7 +3965,7 @@ only screen and (max-device-width: 767px) {
   }
 
   .section-title {
-    margin-bottom: 60px;
+    margin-bottom: 30px;
   }
 
   .section-title h2 {

@@ -1,1 +1,13 @@
-// Common Styles and Blocks
+.img {
+  max-width: 100%;
+  object-fit: cover;
+  height: auto;
+}
+
+.pl-0 {
+  padding-left: 0;
+}
+
+.pr-0 {
+  padding-right: 0;
+}
