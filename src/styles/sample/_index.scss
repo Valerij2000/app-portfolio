@@ -1495,10 +1495,6 @@ button[type="submit"] {
   }
 }
 
-
-
-
-
 /* SECTION TITLE */
 .section-title {
   width: 100%;
@@ -1514,6 +1510,19 @@ button[type="submit"] {
     img {
       height: 70px;
     }
+
+    .logo-keyboard {
+      max-width: 1000px;
+      width: 100%;
+      height: auto;
+    }
+
+    .logo-mouse {
+      z-index: -1;
+      max-width: 290px;
+      width: 100%;
+      height: auto;
+    }
   }
 
   h6 {
@@ -1527,6 +1536,7 @@ button[type="submit"] {
   }
 
   h2 {
+    z-index: 5;
     width: 100%;
     display: block;
     margin-bottom: 0;
