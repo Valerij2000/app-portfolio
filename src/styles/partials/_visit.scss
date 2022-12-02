@@ -2,3 +2,11 @@
   display: block;
   margin: 0 auto;
 }
+
+.products-grid__item {
+  display: none;
+}
+
+.products-grid__item.is-visible {
+  display: block;
+}

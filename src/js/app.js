@@ -1,2 +1,2 @@
-import { Example } from "./modules/Example";
-Example.get();
+import { LoadMore } from "./modules/LoadMore";
+LoadMore.init();
