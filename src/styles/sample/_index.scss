@@ -1997,6 +1997,7 @@ button[type="submit"] {
   padding: 100px 80px;
 
   .titles {
+    position: relative;
     width: 100%;
     display: block;
     margin-bottom: 60px;
@@ -2500,12 +2501,9 @@ button[type="submit"] {
   }
 }
 
-
-
-
 /* ART SLIDER */
 .art-slider {
-  width: 100%;
+  min-width: 100%;
   float: left;
   position: relative;
   overflow: hidden;
