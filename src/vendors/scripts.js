@@ -2,7 +2,6 @@
   $(document).ready(function () {
     "use strict";
 
-
     // ACCORDION
     var allPanels = $('.accordion > dd').hide();
     $('.accordion > dt > a').click(function () {
@@ -94,7 +93,7 @@
     slidesPerView: 1,
     loop: true,
     spaceBetween: 0,
-	   breakpoints: {
+    breakpoints: {
       640: {
         slidesPerView: 1,
         spaceBetween: 0,
@@ -188,8 +187,19 @@
   // SLIDER
   var artsliderimages = new Swiper('.art-slider-images', {
     spaceBetween: 0,
+    effect: "coverflow",
+    grabCursor: true,
+    centeredSlides: true,
+    slidesPerView: "auto",
+    coverflowEffect: {
+      rotate: 50,
+      stretch: 0,
+      depth: 100,
+      modifier: 1,
+      slideShadows: true,
+    },
     autoplay: {
-      delay: 9500,
+      delay: 2500,
       disableOnInteraction: false,
     },
     loop: true,
@@ -199,12 +209,15 @@
     },
     breakpoints: {
       1024: {
+        slidesPerView: 3,
         loopedSlides: 3,
       },
       768: {
+        slidesPerView: 2,
         loopedSlides: 2,
       },
       640: {
+        slidesPerView: 2,
         loopedSlides: 1
       },
       320: {
@@ -318,12 +331,12 @@
 
   (function () {
 
-    return requestAnimationFrame
-      || mozRequestAnimationFrame
-      || webkitRequestAnimationFrame
-      || oRequestAnimationFrame
-      || msRequestAnimationFrame
-      || function (callback) {
+    return requestAnimationFrame ||
+      mozRequestAnimationFrame ||
+      webkitRequestAnimationFrame ||
+      oRequestAnimationFrame ||
+      msRequestAnimationFrame ||
+      function (callback) {
         setTimeout(callback, 1000 / 60);
       };
 
@@ -421,16 +434,16 @@
 
 
   // ODOMETER
-	
-	$(".odometer").each(function(){
-          $(this).html($(this).data('count'));
-        
-    });
-	
-	
-	
-	
- 
-	
-	
+
+  $(".odometer").each(function () {
+    $(this).html($(this).data('count'));
+
+  });
+
+
+
+
+
+
+
 })(jQuery);
