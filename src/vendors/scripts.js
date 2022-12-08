@@ -162,28 +162,6 @@
 
   }
 
-
-  // KINETIC TEXTS
-  var slidertexts = new Swiper('.kinetic-texts', {
-    spaceBetween: 10,
-    centeredSlides: true,
-    slidesPerView: 1,
-    touchRatio: 0,
-    slideToClickedSlide: false,
-    loop: true,
-    loopedSlides: 1,
-    effect: 'fade',
-    navigation: {
-      nextEl: '.button-next',
-      prevEl: '.button-prev',
-    },
-
-  });
-
-
-  /* COLLECTION SLIDER */
-
-
   // SLIDER
   var artsliderimages = new Swiper('.art-slider-images', {
     spaceBetween: 0,
