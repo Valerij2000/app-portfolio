@@ -410,9 +410,7 @@
     } else {
       startTime = null;
     }
-
   }
-
   function hidePreloader() {
     setTimeout(function () {
       $("body").addClass("page-loaded");
@@ -420,8 +418,6 @@
     }, settings.preloaderAnimationDuration + 100);
   }
   var resizeTimer;
-
-
   // LOCOMOTIVE
   gsap.registerPlugin(ScrollTrigger);
   const locoScroll = new LocomotiveScroll({
@@ -431,19 +427,4 @@
   });
   ScrollTrigger.addEventListener("refresh", () => locoScroll.update());
   ScrollTrigger.refresh();
-
-
-  // ODOMETER
-
-  $(".odometer").each(function () {
-    $(this).html($(this).data('count'));
-
-  });
-
-
-
-
-
-
-
 })(jQuery);

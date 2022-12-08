@@ -1,5 +1,4 @@
 @import 'sample/vendor/fontawesome.min.css';
-@import 'sample/vendor/odometer.min.css';
 @import 'sample/vendor/fancybox.min.css';
 @import 'sample/vendor/swiper.min.css';
 @import 'sample/vendor/bootstrap.min.css';
@@ -2052,67 +2051,6 @@ button[type="submit"] {
   }
 }
 
-
-
-
-
-/* COUNTER BOX */
-.odometer.odometer-auto-theme .odometer-digit,
-.odometer.odometer-theme-car .odometer-digit {
-  padding: 0;
-  padding-right: 7px;
-}
-
-.counter-box {
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-
-  .odometer {
-    font-size: 82px;
-    @include font-second;
-    display: inline-block;
-    line-height: 1;
-    position: relative;
-    padding: 0;
-
-    &:after {
-      content: "";
-      width: 70px;
-      height: 70px;
-      background: $color-main;
-      border-radius: 50%;
-      position: absolute;
-      right: -50px;
-      top: -20px;
-      z-index: -1;
-    }
-  }
-
-  .value {
-    font-size: 82px;
-    @include font-second;
-    display: inline-block;
-    line-height: 1;
-    margin-left: 10px;
-    position: relative;
-    z-index: 1;
-  }
-
-  p {
-    width: 100%;
-    display: block;
-    margin: 0;
-    text-align: center;
-    font-weight: 700;
-    opacity: 0.7;
-  }
-}
-
-
-
-
 /* IMAGE CONTENT BOX */
 .col-lg-4:nth-child(1) .image-content-box {
   padding-right: 30px;
@@ -3590,10 +3528,6 @@ only screen and (max-device-width: 1199px) {
 
   .image-content-box {
     padding: 0 !important;
-  }
-
-  .counter-box .odometer {
-    font-size: 56px;
   }
 
   .counter-box .value {
