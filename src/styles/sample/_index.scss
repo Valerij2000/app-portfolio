@@ -1131,7 +1131,7 @@ button[type="submit"] {
         opacity: 1;
       }
 
-      h1 {
+      .h1 {
         font-size: 126px;
         font-weight: 400;
         @include font-second;
@@ -1207,7 +1207,7 @@ button[type="submit"] {
       flex-wrap: wrap;
       align-items: center;
 
-      h1 {
+      .h1 {
         font-size: 126px;
         font-weight: 700;
         @include font-second;
@@ -1382,7 +1382,7 @@ button[type="submit"] {
     position: relative;
     margin-top: 60px;
 
-    h1 {
+    .h1 {
       font-size: 126px;
       font-weight: 400;
       @include font-second;
@@ -3417,7 +3417,7 @@ only screen and (max-device-width: 1199px) {
     padding: 0 2%;
   }
 
-  .slider .slider-texts .swiper-slide h1 {
+  .slider .slider-texts .swiper-slide .h1 {
     font-size: 92px;
   }
 
@@ -3433,7 +3433,7 @@ only screen and (max-device-width: 1199px) {
     left: 60%;
   }
 
-  .page-header .inner h1 {
+  .page-header .inner .h1 {
     font-size: 92px;
   }
 
@@ -3578,7 +3578,7 @@ only screen and (max-device-width: 991px) {
     display: inline-block;
   }
 
-  .slider .slider-texts .swiper-slide h1 {
+  .slider .slider-texts .swiper-slide .h1 {
     font-size: 72px;
   }
 
@@ -3773,12 +3773,12 @@ only screen and (max-device-width: 767px) {
     padding: 0;
   }
 
-  .slider .slider-texts .swiper-slide h1 {
+  .slider .slider-texts .swiper-slide .h1 {
     color: $color-dark;
     font-size: 42px;
   }
 
-  .slider .slider-texts .swiper-slide h1 br {
+  .slider .slider-texts .swiper-slide .h1 br {
     display: none;
   }
 
@@ -3819,7 +3819,7 @@ only screen and (max-device-width: 767px) {
     padding: 0 15px;
   }
 
-  .page-header .inner h1 {
+  .page-header .inner .h1 {
     font-size: 42px;
   }
 
