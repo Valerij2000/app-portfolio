@@ -641,7 +641,7 @@ button[type="submit"] {
           list-style: none;
           text-align: center;
 
-          h5 {
+          .h5 {
             width: 100%;
             display: block;
             font-size: 20px;
@@ -1531,7 +1531,7 @@ button[type="submit"] {
     }
   }
 
-  h6 {
+  .h6 {
     width: 100%;
     display: block;
     margin-bottom: 10px;
@@ -1760,7 +1760,7 @@ button[type="submit"] {
         display: inline-block;
         margin-top: 10px;
 
-        h5 {
+        .h5 {
           width: 100%;
           display: block;
           @include font-second;
@@ -1944,7 +1944,7 @@ button[type="submit"] {
     display: block;
     margin-bottom: 60px;
 
-    h6 {
+    .h6 {
       width: 100%;
       display: block;
       margin-bottom: 10px;
@@ -2090,7 +2090,7 @@ button[type="submit"] {
     }
   }
 
-  h6 {
+  .h6 {
     width: 100%;
     display: block;
     margin: 0;
@@ -2348,7 +2348,7 @@ button[type="submit"] {
   display: flex;
   flex-wrap: wrap;
 
-  h6 {
+  .h6 {
     width: 100%;
     display: block;
     margin-bottom: 20px;
@@ -2400,7 +2400,7 @@ button[type="submit"] {
     flex-wrap: wrap;
     margin-bottom: 40px;
 
-    h6 {
+    .h6 {
       width: 100%;
       display: block;
       margin-bottom: 10px;
@@ -2705,7 +2705,7 @@ button[type="submit"] {
     }
   }
 
-  h6 {
+  .h6 {
     width: 100%;
     display: block;
     margin-bottom: 30px;
@@ -2883,7 +2883,7 @@ button[type="submit"] {
       flex-wrap: wrap;
       margin-bottom: 30px;
 
-      h6 {
+      .h6 {
         width: 100%;
         display: block;
         margin-bottom: 10px;
@@ -2964,7 +2964,7 @@ button[type="submit"] {
     margin-bottom: 0;
   }
 
-  h6 {
+  .h6 {
     width: 100%;
     display: block;
     margin-bottom: 15px;
@@ -4163,15 +4163,15 @@ only screen and (max-device-width: 767px) {
 
 @-webkit-keyframes side-widget-in {
   0% {
-    d: path('M540,1080H0V0h540c-40.28,124.78-85.13,311.48-85,541C455.13,769.53,499.81,955.48,540,1080z');
+    d: path('M540,1080H0V0.h540c-40.28,124.78-85.13,311.48-85,541C455.13,769.53,499.81,955.48,540,1080z');
   }
 
   50% {
-    d: path('M540,1080H0V0h540c31.96,142.05,60.09,325.94,60,541C599.91,755.16,571.87,938.34,540,1080z');
+    d: path('M540,1080H0V0.h540c31.96,142.05,60.09,325.94,60,541C599.91,755.16,571.87,938.34,540,1080z');
   }
 
   100% {
-    d: path('M540,1080H0V0h540c0,179.85,0,359.7,0,539.54C540,719.7,540,899.85,540,1080z');
+    d: path('M540,1080H0V0.h540c0,179.85,0,359.7,0,539.54C540,719.7,540,899.85,540,1080z');
   }
 
 }
@@ -4179,14 +4179,14 @@ only screen and (max-device-width: 767px) {
 @-webkit-keyframes side-widget-out {
 
   0% {
-    d: path('M540,1080H0V0h540c0,179.85,0,359.7,0,539.54C540,719.7,540,899.85,540,1080z');
+    d: path('M540,1080H0V0.h540c0,179.85,0,359.7,0,539.54C540,719.7,540,899.85,540,1080z');
   }
 
   50% {
-    d: path('M540,1080H0V0h540c-40.28,124.78-85.13,311.48-85,541C455.13,769.53,499.81,955.48,540,1080z');
+    d: path('M540,1080H0V0.h540c-40.28,124.78-85.13,311.48-85,541C455.13,769.53,499.81,955.48,540,1080z');
   }
 
   100% {
-    d: path('M540,1080H0V0h540c31.96,142.05,60.09,325.94,60,541C599.91,755.16,571.87,938.34,540,1080z');
+    d: path('M540,1080H0V0.h540c31.96,142.05,60.09,325.94,60,541C599.91,755.16,571.87,938.34,540,1080z');
   }
 }
