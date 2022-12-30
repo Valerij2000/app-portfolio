@@ -1644,6 +1644,43 @@ button[type="submit"] {
   }
 }
 
+.link-button {
+  text-transform: uppercase;
+  height: 70px;
+  line-height: 70px;
+  display: inline-block;
+  background: $color-white;
+  padding: 0 40px;
+  color: $color-dark;
+  font-size: 14px;
+  font-weight: 700;
+  position: relative;
+  @include transition;
+
+  &:before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    border: 2px solid transparent;
+    @include transition;
+  }
+
+  &:hover {
+    text-decoration: none;
+    line-height: 80px;
+    text-indent: 6px;
+
+    &:before {
+      top: 6px;
+      left: 6px;
+      border-color: $color-dark;
+    }
+  }
+}
+
 
 
 
